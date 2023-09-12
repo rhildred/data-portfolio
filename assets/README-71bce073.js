@@ -1,0 +1,5 @@
+import"./compat.module-2df6b160.js";import{o as t}from"./jsxRuntime.module-c37c4584.js";import{M as n}from"./index-582735f7.js";import{marked as i}from"https://cdnjs.cloudflare.com/ajax/libs/marked/9.0.0/lib/marked.esm.js";import{u as m}from"./index-d6b1ed49.js";import{k as s}from"./preact.module-a8db4ca9.js";import"./hooks.module-1ffebabd.js";import"./iframe-1656bef7.js";import"../sb-preview/runtime.js";import"./index-d475d2ea.js";import"./_commonjsHelpers-de833af9.js";import"./index-d37d4223.js";import"./index-356e4a49.js";const c=`# preact-storybook
+
+[Edit on StackBlitz ⚡️](https://stackblitz.com/edit/stackblitz-starters-8gkptd)`;class a extends HTMLElement{connectedCallback(){this.innerHTML=i(this.innerHTML)}}customElements.define("to-html",a);const p=()=>t("to-html",{children:c});function r(o){return t(s,{children:[t(n,{title:"README.md"}),`
+`,t(p,{})]})}function T(o={}){const{wrapper:e}=Object.assign({},m(),o.components);return e?t(e,Object.assign({},o,{children:t(r,o)})):r()}export{T as default};
+//# sourceMappingURL=README-71bce073.js.map

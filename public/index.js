@@ -4,11 +4,10 @@ class MarkdownElement extends HTMLElement { // (1)
 
   async connectedCallback() {
     if(this.attributes.src){
-      const self = this;
       const sUrl = this.attributes.src.baseURI + this.attributes.src.value;
       const res = await fetch(sUrl);
       const sText = await res.text();
-      self.innerHTML = sText;
+      this.innerHTML = sText;
     }else{
       this.innerHTML = marked(this.innerHTML);
     }

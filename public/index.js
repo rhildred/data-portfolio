@@ -2,8 +2,13 @@ import { marked } from "https://cdnjs.cloudflare.com/ajax/libs/marked/9.0.0/lib/
 
 class MarkdownElement extends HTMLElement { // (1)
 
-  connectedCallback() {
-    this.innerHTML = marked(this.innerHTML);
+  async connectedCallback() {
+    if(this.src){
+      const res = await fetch(this.src);
+      this.innerHtml = await res.text();
+    }else{
+      this.innerHTML = marked(this.innerHTML);
+    }
   }
 
 }
